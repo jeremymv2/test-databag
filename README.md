@@ -1,2 +1,2 @@
 # test-databag
-Rspec testing of data_bags
+Rspec testing using data_bags
