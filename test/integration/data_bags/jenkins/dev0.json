@@ -1,0 +1,19 @@
+{
+  "id": "dev0",
+  "servertype_citrixserver": [
+    {
+      "hostname": "jonsnow"
+    },
+    {
+      "hostname": "aryastark"
+    }
+  ],
+  "servertype_webserver": [
+    {
+      "hostname": "jamielannister"
+    },
+    {
+      "hostname": "gregorclegane"
+    }
+  ]
+}
