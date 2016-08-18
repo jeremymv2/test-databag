@@ -8,7 +8,7 @@ require 'spec_helper'
 
 describe 'test-databag::default' do
   include ChefVault::TestFixtures.rspec_shared_context
-  context "When server type is 'servertype_citrixserver'" do
+  context "When server type from data_bag is 'servertype_citrixserver'" do
     let(:hostname) do
       'jonsnow'
     end
@@ -31,7 +31,7 @@ describe 'test-databag::default' do
       expect(attribute).to eq hostname
     end
 
-    it 'creates the file /tmp/servertype_citrixserver' do
+    it 'creates the appropriate file /tmp/servertype_citrixserver' do
       expect(chef_run).to create_file('/tmp/servertype_citrixserver')
     end
 
@@ -40,7 +40,7 @@ describe 'test-databag::default' do
     end
   end
 
-  context "When server type is 'servertype_webserver'" do
+  context "When server type from data_bag is 'servertype_webserver'" do
     let(:hostname) do
       'gregorclegane'
     end
@@ -63,7 +63,7 @@ describe 'test-databag::default' do
       expect(attribute).to eq hostname
     end
 
-    it 'creates the file /tmp/servertype_webserver' do
+    it 'creates the appropriate file /tmp/servertype_webserver' do
       expect(chef_run).to create_file('/tmp/servertype_webserver')
     end
 
